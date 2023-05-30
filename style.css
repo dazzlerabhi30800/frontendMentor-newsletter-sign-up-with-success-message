@@ -249,10 +249,10 @@ form {
     min-height: 600px;
   }
   .front {
-    min-width: 700px;
     height: 600px;
+    min-width: 700px;
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     background: var(--White);
     border-radius: 10px;
     box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.3);
