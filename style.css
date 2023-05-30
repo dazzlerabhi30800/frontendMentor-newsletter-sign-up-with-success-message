@@ -68,18 +68,17 @@ figure {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
 
-  > .info {
-    color: var(--Dark-Slate-Grey);
-    padding: 1rem;
-
-    > p {
-      margin: 1.5rem 0;
-      width: 90%;
-      font-size: 0.93rem;
-      color: var(--Charcoal-Grey);
-    }
-  }
+.info {
+  color: var(--Dark-Slate-Grey);
+  padding: 1rem;
+}
+.info > p {
+  margin: 1.5rem 0;
+  width: 90%;
+  font-size: 0.93rem;
+  color: var(--Charcoal-Grey);
 }
 
 h1 {
@@ -92,18 +91,17 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
 
-  > .feature {
-    display: flex;
-    gap: 0.7rem;
-    align-items: flex-start;
-
-    > p {
-      font-size: 0.93rem;
-      width: 85%;
-      color: var(--Charcoal-Grey);
-    }
-  }
+.feature {
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+}
+.feature p {
+  font-size: 0.93rem;
+  width: 85%;
+  color: var(--Charcoal-Grey);
 }
 
 form {
@@ -120,44 +118,42 @@ form {
     "three three";
   place-items: center start;
   gap: 0.6rem;
-
-  > label {
-    grid-area: one;
-  }
-
-  > label,
-  > small {
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: var(--Dark-Slate-Grey);
-  }
-  > small {
-    place-self: center end;
-    grid-area: two;
-    opacity: 0;
-    transition: 0.4s linear;
-  }
-
-  > #email {
-    grid-area: three;
-    border: 2px solid var(--Grey);
-    border-radius: 5px;
-    padding: 8px;
-    transition: 0.3s linear;
-    width: 100%;
-
-    &:focus {
-      border: 2px solid var(--Charcoal-Grey);
-      outline: none;
-    }
-  }
 }
-.input--container.error {
-  > small {
-    opacity: 1;
-    color: var(--Tomato);
-  }
+.input--container > label {
+  grid-area: one;
 }
+
+.input--container > label,
+.input--container > small {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--Dark-Slate-Grey);
+}
+.input--container small {
+  place-self: center end;
+  grid-area: two;
+  opacity: 0;
+  transition: 0.4s linear;
+}
+
+.input--container #email {
+  grid-area: three;
+  border: 2px solid var(--Grey);
+  border-radius: 5px;
+  padding: 8px;
+  transition: 0.3s linear;
+  width: 100%;
+}
+#email:focus {
+  border: 2px solid var(--Charcoal-Grey);
+  outline: none;
+}
+
+.input--container.error small {
+  opacity: 1;
+  color: var(--Tomato);
+}
+
 .input--container.error #email {
   color: var(--Tomato);
   border: 2px solid var(--Tomato);
@@ -203,23 +199,22 @@ form {
   gap: 1.9rem;
   padding: 1rem;
   color: var(--Dark-Slate-Grey);
-
-  > h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    width: 10ch;
-  }
-
-  > p {
-    width: 95%;
-    line-height: 1.4;
-
-    > span {
-      color: #000;
-      font-weight: 700;
-    }
-  }
 }
+.success--wrapper > h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  width: 10ch;
+}
+
+.success--wrapper p {
+  width: 95%;
+  line-height: 1.4;
+}
+.success--wrapper p span {
+  color: #000;
+  font-weight: 700;
+}
+
 .dismiss {
   width: 100%;
   padding: 15px 1.5rem;
@@ -303,7 +298,6 @@ form {
     text-align: center;
   }
   .dismiss {
-    /* --button-pos: 0px; */
     transform: translateY(0px);
   }
 }
