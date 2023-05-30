@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" media="all" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- Front Info -->
+      <figure class="front">
+        <div class="signup--wrapper">
+          <div class="sign-img">
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="./assets/images/illustration-sign-up-mobile.svg"
+              />
+              <img
+                src="./assets/images/illustration-sign-up-desktop.svg"
+                alt="signup"
+              />
+            </picture>
+          </div>
+          <div class="info--wrapper">
+            <!-- Info Start  -->
+            <div class="info">
+              <h1>Stay updated!</h1>
+              <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+              <!-- Feature Wrapper -->
+              <div class="feature--wrapper">
+                <div class="feature">
+                  <img src="./assets/images/icon-list.svg" alt="list" />
+                  <p>Product discovery and building what matters</p>
+                </div>
+                <div class="feature">
+                  <img src="./assets/images/icon-list.svg" alt="list" />
+                  <p>Measuring to endure updates are a success</p>
+                </div>
+                <div class="feature">
+                  <img src="./assets/images/icon-list.svg" alt="list" />
+                  <p>And much more!</p>
+                </div>
+              </div>
+              <!-- Feature End -->
+            </div>
+            <!-- Info End -->
+
+            <!-- Email Form Input -->
+            <form>
+              <div class="input--container">
+                <label for="email">Email Address</label>
+                <small>Email not Valid</small>
+                <input type="email" name="email" id="email" />
+              </div>
+              <button class="btn" type="submit">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+            <!-- Email form Input End -->
+          </div>
+        </div>
+      </figure>
+      <!-- Front End -->
+
+      <!-- Back Card -->
+      <figure class="back">
+        <div class="success--wrapper">
+          <img src="./assets/images/icon-success.svg" alt="success" />
+          <h2>Thanks for Subscribing!</h2>
+          <p>
+            Thanks for subscribing! A confirmation email has been sent to
+            <span>ash@loremcompany.com</span>. Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+          <button class="btn dismiss">Dismiss Message</button>
+        </div>
+      </figure>
+    </main>
+
+    <!-- <div class="attribution"> -->
+    <!--   Challenge by -->
+    <!--   <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" -->
+    <!--     >Frontend Mentor</a -->
+    <!--   >. Coded by <a href="#">Your Name Here</a>. -->
+    <!-- </div> -->
+  </body>
+  <script src="./main.js"></script>
+</html>
